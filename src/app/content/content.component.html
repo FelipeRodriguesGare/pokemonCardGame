@@ -1,0 +1,23 @@
+<div class="container">
+    <form [formGroup]="inputForm" class="attributeSelector addPokemon" (ngSubmit)="addPokemon()">
+        <label for="pokemonName">Nome do Pokemon</label>
+        <input type="text" name="pokemonName" placeholder="Ex: mew" formControlName="pokeName">
+        <button [disabled]="!inputForm.valid" class="addPoke">ADICIONAR</button>
+    </form>
+
+    <form class="attributeSelector" [formGroup]="gameForm" (ngSubmit)="gameOver()">
+        <select id="attributes" formControlName="chosenAttribute">
+            <option value="attack">Attack</option>
+            <option value="hp">Life</option>
+            <option value="defense">Defense</option>
+            <option value="speed">Speed</option>
+        </select>
+        <button [disabled]="!gameForm.value.chosenAttribute">GANHADOR</button>
+        <button type="button" (click)="resetGame()">RESET</button>
+    </form>
+</div>
+<div>
+    <ul class="cards" >
+        <li *ngFor='let pokemon of pokemonsArray' ><app-cards (loading)="loading" (pokemonToRemove)="removePokemon($event)" [pokeData]="pokemon"></app-cards></li>
+    </ul>
+</div>

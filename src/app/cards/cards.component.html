@@ -1,0 +1,15 @@
+<div class="loadingContainer">
+    <app-loading *ngIf="loading; else data"></app-loading>
+</div>
+<ng-template #data>
+    <div class="card {{ pokeData.type }}" [ngClass]="{'lost':isLoser()}" id="pokemon">
+        <input type="image" src="https://cdn-icons-png.flaticon.com/512/929/929487.png" class="removePokemon" (click)="removePokemon()" />
+        <img src='{{ pokeData.image }}' class="img-wrapper" alt="" srcset="">
+        <div class="attributes-wrapper" >
+            <div class="pokemonAttributes life" ><p>LIFE</p> <p class="attributeValue">{{ pokeData.hp }}</p></div>
+            <div class="pokemonAttributes attack" ><p>ATTACK</p> <p class="attributeValue">{{ pokeData.attack }}</p></div>
+            <div class="pokemonAttributes defense" ><p>DEFENSE</p> <p class="attributeValue">{{ pokeData.defense }}</p></div>
+            <div class="pokemonAttributes speed" ><p>SPEED</p> <p class="attributeValue">{{ pokeData.speed }}</p></div>
+        </div>
+    </div>
+<ng-template>

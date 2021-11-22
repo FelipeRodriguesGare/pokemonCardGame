@@ -1,0 +1,159 @@
+.card {
+    margin: 3px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.fire {
+    background-color: rgb(243, 78, 78);
+}
+
+.ice{
+    background-color: rgb(149, 195, 255);
+}
+
+.water {
+    background-color: rgb(78, 150, 243);
+}
+
+.electric {
+    background-color: rgb(229, 231, 100);    
+}
+
+.psychic {
+    background-color: rgba(235, 72, 207, 0.904);
+}
+
+.normal {
+    background-color: rgba(199, 156, 199, 0.76);
+}
+
+.grass {
+    background-color: rgb(99, 212, 99);
+}
+
+.fighting {
+    background-color: #b96738;
+}
+
+.ghost {
+    background-color: rgb(56, 74, 153);
+}
+
+.bug {
+    background-color: rgb(2, 104, 56);
+}
+
+.dark {
+    background-color: rgb(73, 73, 73);
+}
+
+.dragon {
+    background-color: rgba(93, 64, 201, 0.842);
+}
+
+.fairy {
+    background-color: rgb(227, 146, 243);
+}
+
+.flying {
+    background-color: rgb(172, 182, 224);
+}
+
+.ground {
+    background-color: rgb(189, 154, 81);
+}
+
+.poison {
+    background-color: rgb(150, 48, 233);
+}
+
+.rock {
+    background-color: rgb(153, 74, 37);
+}
+
+.steel {
+    background-color: rgb(209, 239, 248);
+}
+
+.img-wrapper {
+    max-width: 30vw;
+    max-height: 30vh;
+}
+
+.attributes-wrapper {
+    padding: 6%;
+    padding-top: 0px;
+}
+
+.pokemonAttributes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemonAttributes p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.lost{
+    background-color: grey;
+}
+
+.attributeSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.winner {
+    color: black;
+    background-color: white;
+}
+
+.winner:hover {
+    color: white;
+    background-color: black;
+}
+
+#attributes {
+    width: 20%;
+    height: 10%;
+     
+ }
+
+ .addPokemon {
+     margin-top: 2%;
+     margin-bottom: 1%;
+ }
+
+ .attributeSelector input, .attributeSelector select{
+     margin: 0px 5px 0px 5px;
+}
+
+.removePokemon {
+    position: absolute;
+    height: 3%;
+    background-color: cyan;
+    border-radius: 100%;
+}
+
+.removePokemon:hover {
+    position: absolute;
+    height: 3%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.loadingContainer {
+    height: 337px;
+    width: 187px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+.navContainer {
+    background-color: rgb(107, 107, 238);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    margin: 0px
+}
+
+.buttonsContainer {
+    padding-left: 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 43%;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.loginContainer {
+    padding-right: 20px;
+}

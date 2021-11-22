@@ -1,0 +1,91 @@
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    margin: 5px 10px;
+}
+
+.attributeSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#attributes {
+    width: 20%;
+    height: 10%;
+     
+ }
+
+.addPokemon {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.attributeSelector input, .attributeSelector select{
+    margin: 0px 5px 0px 5px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    line-height: 22px;
+    margin: 5px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    width: fit-content;
+}
+
+.ng-invalid .ng-touched {
+    border-width: 0 0 2px;
+    border-color: red;
+}
+
+.ng-touched .ng-valid {
+    border-width: 0 0 2px;
+    border-color: grey;
+}
+
+button:disabled {
+    margin: 5px;
+    background-color: #C5C7D3;
+    padding: 10px;
+    font-weight: bold;
+}
+
+button {
+    border:none;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    font-weight: bold;
+    margin: 5px;
+    background-color: #505EDB;
+    padding: 10px;
+}
+
+.ng-valid button:hover {
+    margin: 5px;
+    background-color: #9CA6FF;
+    color: #2C0088;
+    padding: 10px;
+}
+
+button:disabled:hover {
+    margin: 5px;
+    background-color: #C5C7D3 !important;
+    color: white !important;
+    padding: 10px;
+    font-weight: bold;
+}

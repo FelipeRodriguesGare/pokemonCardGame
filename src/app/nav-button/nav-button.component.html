@@ -1,0 +1,4 @@
+<button (click)="sendTo(route)" class="buttonContainer" [ngClass]="{'buttonClicked': checkRoute()}">
+    <mat-icon class="matIcon" [ngClass]="{'matIconClicked': checkRoute()}">{{icon}}</mat-icon>
+    <p [ngClass]="{'pClicked': checkRoute()}">{{name}}</p> 
+</button>

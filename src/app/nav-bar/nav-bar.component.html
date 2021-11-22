@@ -1,0 +1,18 @@
+<div class="navContainer">
+    <div class="buttonsContainer">
+        <app-nav-button [route]="'home'" [icon]="'home'" [name]="'Home'"></app-nav-button>
+        <app-nav-button [route]="'game'" [icon]="'videogame_asset'" [name]="'Game'"></app-nav-button>
+        <app-nav-button [route]="'libary'" [icon]="'menu_book'" [name]="'Libary'"></app-nav-button>
+    </div>
+    <div class="title" (click)="sendTo('/home')">
+        <p>Pokemon</p>
+        <img  src="https://img.icons8.com/color/48/000000/pokeball-2.png"/>
+        <p>Game</p>
+    </div>
+    <div class="loginContainer">
+        <app-nav-button [route]="'login'" [icon]="'account_circle'" [name]="'Login'" *ngIf="!isLoggedIn(); else data"></app-nav-button>
+        <ng-template #data>
+            <app-logout ></app-logout>
+        </ng-template>
+    </div>
+</div>

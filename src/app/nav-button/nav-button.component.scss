@@ -1,0 +1,34 @@
+p{
+    color: white;
+    margin: 0px;
+}
+
+.matIcon{
+    color: white;
+}
+
+button{
+    margin-right: 20px;
+    height: 45px;
+    background-color: rgb(107, 107, 238);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonClicked {
+    background-color: rgb(87, 87, 248);
+}
+
+.matIconClicked {
+    color: white;
+}
+
+.pClicked {
+    color: white;
+}
+
+.buttonContainer:hover {
+    background-color: rgb(87, 87, 248);
+}

@@ -1,0 +1,15 @@
+<div class="formContainer">
+    <form [formGroup]="loginForm" class="" (ngSubmit)="logMeIn()">
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" formControlName="username">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" formControlName="password">
+        </div>
+        
+        <button [disabled]="!loginForm.valid" class="">Login</button>
+    </form>
+    <!-- <button  (click)="logMeIn()">Login</button> -->
+</div>
